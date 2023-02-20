@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+    body {
+    font-family: "Lato", sans-serif;
+    font-size: 20pt;
+    font-weight: normal;
+    background: lightblue;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h3>Click Counter</h3>
+      <button id="clickme">Click me: 0</button>
+    </div>
+    <script type="text/javascript">
+    var button = document.getElementById("clickme"),
+    count = 0;
+    button.onclick = function() {
+    count += 1;
+    button.innerHTML = "Click me: " + count;
+    };
+    </script>
+  </body>
+</html>
